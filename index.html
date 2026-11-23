@@ -1,0 +1,169 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OBMC Enroll Now</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <style>
+        body {
+            background-image: linear-gradient(
+                rgba(0, 0, 0, 0.45),
+                rgba(0, 0, 0, 0.45)
+            ),
+            url("https://images.squarespace-cdn.com/content/v1/664c7ae50eea9c731b37e817/38df9671-1633-4828-b705-5972dadf6a57/OBMC+Quadrangle+2.jpg?format=1000w");
+
+            background-size: cover; background-position: center; background-attachment: fixed; background-repeat: no-repeat; font-family: Arial, sans-serif;
+        }
+        .navbar {
+            background-color: #173b65;
+        }
+
+        .navbar-brand, .nav-link {
+            color: white !important;
+        }
+
+        .form-container {
+            max-width: 750px; margin: 40px auto;  padding: 30px;  background-color: white;
+            border-radius: 12px;
+        }
+
+        h1, h2 {
+            color: #173b65;
+        }
+
+        .btn-primary {
+            background-color: #173b65;
+        }
+
+        .btn-primary:hover {
+            background-color: #24578c;
+        }
+
+        footer {
+            background-color: #173b65;  color: white; text-align: center; padding: 20px; margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">OBMC Enrollment</a>
+
+            <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarMenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#enrollment">Enroll Now</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="form-container shadow" id="enrollment">
+            <h1 class="text-center fw-bold">OBMC Enrollment Form</h1>
+            <p class="text-center text-muted">
+                Welcome! Please fill out the form below to enroll to continue.
+            </p>
+            <form>
+                <h2 class="h4 mt-4">Student Information</h2>
+
+                <div class="mb-3">
+                    <label class="form-label">Full Name</label>
+                    <input type="text" class="form-control"
+                        placeholder="Enter student's full name" required>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label class="form-label">Birth Date</label>
+                        <input type="date" class="form-control" required>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label class="form-label">Gender</label>
+                        <select class="form-control" required>
+                            <option value="">Select Gender</option>
+                            <option>Male</option>
+                            <option>Female</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Address</label>
+                    <input type="text" class="form-control"
+                        placeholder="Enter home address" required>
+                </div>
+                <h2 class="h4 mt-4">Enrollment Details</h2>
+                <div class="mb-3">
+                    <label class="form-label">Grade Levels</label>
+                    <select class="form-control" required>
+                        <option value="">Select Grade Level</option>
+                        <option>junior Casa</option>
+                        <option>Junior Advance Casa</option>
+                        <option>Advance Casa</option>
+                        <option>Grade 1</option>
+                        <option>Grade 2</option>
+                        <option>Grade 3</option>
+                        <option>Grade 4</option>
+                        <option>Grade 5</option>
+                        <option>Grade 6</option>
+                        <option>Grade 7</option>
+                        <option>Grade 8</option>
+                        <option>Grade 9</option>
+                        <option>Grade 10</option>
+                        <option>Grade 11</option>
+                        <option>Grade 12</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">School Years</label>
+                    <select class="form-control" required>
+                        <option value="">Select School Year</option>
+                        <option>2026-2027</option>
+                        <option>2027-2028</option>
+                    </select>
+                </div>
+                <h2 class="h4 mt-4">Parent/Guardian Information</h2>
+                <div class="mb-3">
+                    <label class="form-label">Parent/Guardian Name</label>
+                    <input type="text" class="form-control"
+                        placeholder="Enter parent or guardian name" required>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Contact Number</label>
+                    <input type="tel" class="form-control"
+                        placeholder="Enter contact number" required>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Email Address</label>
+                    <input type="email" class="form-control"
+                        placeholder="Enter email address" required>
+                </div>
+                <div class="text-center mt-4">
+                    <button type="submit" class="btn btn-primary px-5">
+                        Submit Enrollment
+                    </button>
+                    <button type="reset" class="btn btn-secondary px-4">
+                        Clear All
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <p class="mb-1 fw-bold">OBMC Enrollment</p>
+        <p class="mb-1">Thank you for choosing OBMC!</p>
+        <small> @ All rights Reserved.</small>
+    </footer>
+</body>
+</html>
